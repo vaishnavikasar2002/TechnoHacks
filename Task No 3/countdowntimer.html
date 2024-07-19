@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- js file -->
+    <script src="app.js"></script>
+
+    <!-- fontlink -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Countdown Time</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Enter Date</th>
+          <th>Enter Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="date" id="date" /></td>
+          <td><input type="time" id="time" /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id="calculate">Calculate</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+
+    <div id="time">
+      <div class="circle" style="--clr: #1eb9ff">
+        <svg>
+          <circle cx="70" cy="70" r="70" id="dd"></circle>
+        </svg>
+        <div id="days">00 <br /><span>Days</span></div>
+      </div>
+
+      <div class="circle" style="--clr: #ff2972">
+        <svg>
+          <circle cx="70" cy="70" r="70" id="hh"></circle>
+        </svg>
+        <div id="hours">00 <br /><span>Hours</span></div>
+      </div>
+
+      <div class="circle" style="--clr: #fee800">
+        <svg>
+          <circle cx="70" cy="70" r="70" id="mm"></circle>
+        </svg>
+        <div id="minutes">00 <br /><span>Minutes</span></div>
+      </div>
+
+      <div class="circle" style="--clr: #04fc43">
+        <svg>
+          <circle cx="70" cy="70" r="70" id="ss"></circle>
+        </svg>
+        <div id="seconds">00 <br /><span>Seconds</span></div>
+      </div>
+    </div>
+  </body>
+</html>
